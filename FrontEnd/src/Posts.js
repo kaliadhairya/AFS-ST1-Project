@@ -84,16 +84,16 @@ export default function Posts()
         
     return (
         <div className="post_title">
-            <div className="back_button">
-                <button onClick={go_back}>Go Back</button>
+            <div>
+                <button className="back_button" onClick={go_back}>Go Back</button>
             </div>
 
             <div>
                 <p className="delete_error">{delete_error}</p>
-            <div className="content_title">
-                <h2>Title - </h2> &nbsp;
-                <h2>{apiData.title}</h2> 
-            </div>
+                <div className="content_title">
+                    <h2>Title - </h2> &nbsp;
+                    <h2>{apiData.title}</h2> 
+                </div>
             </div>
             <div className="post_content_footer">
                 <button className="post_delete" onClick={delete_button}>Delete</button>

@@ -47,7 +47,7 @@ export default function Register()
 
     return (
         <div className="reg_box">
-            <h1 className="reg_heading">YOU_POST</h1>
+            <h1 className="reg_heading">PostIt</h1>
             <form onSubmit={handleForm}>
                 <input className="reg_input" type = 'text' value = {username} onChange={handleUsername} placeholder="Username"></input><br></br>
                 <input className="reg_input" type = 'password' value = {password} onChange={handlePassword} placeholder="Password"></input><br></br>

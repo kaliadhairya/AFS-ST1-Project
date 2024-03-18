@@ -8,7 +8,8 @@
     margin-top: 50px;
     overflow-y: scroll;
 
-    background: transparent;
+    /* background: transparent; */
+    opacity: .96;
     background-color: white;
     border-radius: 50px;
 }
@@ -35,8 +36,10 @@
 {
     border-radius: 50px;
     /* position: fixed; */
+    padding: 8px;
     cursor: pointer;
     margin-top: 10px;
+    background-color: rgb(21, 21, 133);
 }
 
 .post_create:hover
@@ -49,6 +52,9 @@
     /* position: fixed; */
     margin-left: 240px;
     /* margin-top: -50px; */
+    border-radius: 2px;
+    padding: 7px;
+    background-color: rgb(56, 6, 6);
 }
 
 .post_header
@@ -75,6 +81,7 @@
     padding: 5px;
     border-radius: 10px;
     cursor: pointer;
+    background-color: rgb(44, 44, 44);
 }
 
 .post_data:hover

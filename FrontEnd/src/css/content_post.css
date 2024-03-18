@@ -2,7 +2,7 @@
 {
     /* background: black; */
     margin: auto;
-    width: 400px;
+    width: 500px;
     height: 500px;
     text-align: center;
     padding: 10px;
@@ -11,13 +11,14 @@
     background: transparent;
     background-color: white;
     /* border-radius: 50px; */
-}
+}   
 
 .back_button
 {
     /* margin-left: 500px;
     margin-top: 10px; */
-    width: 300px;
+    padding: 10px;
+    background-color: white;
     /* float: right; */
 }
 
@@ -26,13 +27,20 @@
     float: left;
     margin-left: 10px;
     margin-top: 15px;
+    background-color: rgb(157, 2, 2);
+    padding: 12px;
+    border-radius: 5px;
 }
+
 .post_edit
 {
     float: right;
     /* margin-right: 10px; */
-    margin-right: -80px;
+    margin-right: -180px;
     margin-top: 15px;
+    background-color: rgb(91, 202, 0);
+    padding: 12px;
+    border-radius: 5px;
 }
 
 .post_content_footer

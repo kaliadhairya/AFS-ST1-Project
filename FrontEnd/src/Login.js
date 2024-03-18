@@ -21,7 +21,7 @@ export default function Login()
     
             if(res.status === 200)
             {
-                localStorage.setItem("ujsgf", res.data.token);
+                localStorage.setItem("jwtToken", res.data.token);
                 navigate('/posts');
             }
         }
@@ -51,12 +51,14 @@ export default function Login()
 
     return (
         <div className="login_box">
-            <h1 className="login_heading">Login</h1>
+            <h1 className="login_heading">PostIt</h1>
             <form onSubmit={handleForm}>
                 <input className="login_input" type = 'text' value = {username} onChange={handleUsername} placeholder="Username"></input><br></br>
                 <input className="login_input" type = 'password' value = {password} onChange={handlePassword} placeholder="Password"></input><br></br>
                 <h4 className="login_error">{loginError}</h4>
-                <button className="login_button">Sign in</button>
+                <div className="login">
+                    <button className="login_button">Sign in</button>
+                </div>
             </form>
 
             <p>New here? <a className="login_reg_button" onClick={register_button}>Register</a></p>
